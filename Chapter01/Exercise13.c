@@ -13,6 +13,23 @@
 
 #include <stdio.h>
 
+#define YES 1
+#define NO 0
+
+char clower(char c){
+    if(c >= '0' && c <= '9'){
+        return c;
+    }else{
+        return c+32;
+    }
+}
+
 int main(){
-    return 0;
+
+    char c;
+
+    while((c = getchar()) != EOF){
+        printf("%c\n", clower(c));
+    }
+
 }
